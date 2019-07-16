@@ -1,0 +1,10 @@
+[Unit]
+Description = fan_controller
+
+[Service]
+ExecStart = /opt/fan_controller.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
